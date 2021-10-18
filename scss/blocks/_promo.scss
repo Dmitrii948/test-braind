@@ -1,0 +1,68 @@
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  color: #323c46;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+    background: #fff48e;
+    box-sizing: border-box;
+    height: 155px;
+    width: 155px;
+    @media (min-width: 481px) {
+      height: 155px;
+      width: 241px;
+    }
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &--big {
+      height: 155px;
+      width: 320px;
+      @media (min-width: 481px) {
+        height: 155px;
+        width: 491px;
+        margin-top: 10px;
+        order: 1;
+      }
+      margin-right: 0px;
+    }
+    &--red {
+      background: #ee6956;
+      margin-right: 0px;
+      @media (min-width: 481px) {
+        order: 4;
+      }
+    }
+    &--mt {
+      @media (min-width: 481px) {
+        margin-top: 10px;
+      }
+    }
+    &--fo {
+      @media (min-width: 481px) {
+        order: 3;
+      }
+    }
+    &--gray {
+      padding-right: 5px;
+      background: #d9eaff;
+      margin-right: 0px;
+      @media (min-width: 481px) {
+        order: 2;
+        margin-right: 10px;
+      }
+    }
+  }
+}
